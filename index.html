@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sporty Digital Clock</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap'); /* Sporty digital font */
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1a1a1d;
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            color: #f8f8f8;
+            transition: background-color 0.5s ease-in-out;
+        }
+        
+        .center {
+            text-align: center;
+            background: linear-gradient(135deg, #2c2c34, #141414);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            transition: background 0.3s ease;
+            border: 3px solid #76ff03; /* Bright sporty green */
+        }
+        
+        .banner {
+            font-size: 30px;
+            margin-bottom: 20px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: #76ff03; /* Sporty neon green */
+            text-shadow: 0 0 15px rgba(118, 255, 3, 0.7);
+        }
+
+        #clock {
+            font-size: 80px;
+            font-weight: 700;
+            padding: 20px 40px;
+            color: #f30ca2; /* Sporty bright red */
+            background: linear-gradient(145deg, #2e2e2e, #1e1e1e);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(255, 23, 68, 0.8);
+            border: 2px solid #ff1744;
+            text-shadow: 0 0 20px rgba(255, 23, 68, 0.6);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .center:hover {
+            background: linear-gradient(135deg, #2c2c34, #202020);
+        }
+
+        #clock:hover {
+            box-shadow: 0 0 30px rgba(255, 23, 68, 1);
+            transform: scale(1.05); /* Slight zoom-in effect for more intensity */
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="banner">Digital clock</div>
+        <div id="clock"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
